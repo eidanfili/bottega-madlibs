@@ -18,12 +18,23 @@
     }
 }
 
+.grey {
+background-color: #b3b3b3;
+}
+.green{
+    background-color: #00CB79;
+}
+body {
+    margin:0;
+    height: 1500px;
+}
 
 
 .home{
     background-color: rgba(0,0,0,.06);
     display: grid;
     justify-items: center;
+    height: 1500px;
     grid-template-rows: [header-s] 218px [header-e card-s] 994px [card-e];
 }
 
@@ -132,6 +143,19 @@
         height: 297px;
         justify-self:center;
         padding: 35px 47px;
+
+        &__label {
+            height: 20px;
+            width: 20px;
+            background-color: black;
+            border-radius: 50%;
+            color:white;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            display: inline-block;
+            margin: 4px;
+        }
     }
 }
 
@@ -174,7 +198,6 @@
 
     &__number {
         grid-column: number-s/number-e;
-        background-color: #00CB79;
         color: white;
         font-size: 18px;
         border-radius: 50%;

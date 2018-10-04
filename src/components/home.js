@@ -13,5 +13,6 @@ class Home extends Component {
     );
   }
 }
+//number labels
 
 export default Home;
