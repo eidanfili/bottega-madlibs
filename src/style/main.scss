@@ -1,16 +1,17 @@
 @mixin button {
-    height: 50px;
+    height: 65px;
     width: 300px;
     border:none;
     border-radius: 4px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .01);
-    align-self: center;
+    justify-self: center;
 
     color: white;
     font-family: 'Montserrat';
     font-size: 26px;
     text-align: center;
     font-weight: 600;
+    transform: translateY(-25px);
 
     &:focus {
         outline: none;
@@ -22,11 +23,8 @@
 .home{
     background-color: rgba(0,0,0,.06);
     display: grid;
-
     justify-items: center;
-
     grid-template-rows: [header-s] 218px [header-e card-s] 994px [card-e];
-
 }
 
 
@@ -120,6 +118,20 @@
     &__clear {
         background-color: #45b0e5;
         @include button;
+    }
+
+    &__content {
+        background-color: #f2f2f2;
+        font-size: 22px;
+        word-spacing: 2px;
+        line-height: 29px;
+        font-weight: 300;
+        font-family: 'Montserrat';
+
+        width: 1100px;
+        height: 297px;
+        justify-self:center;
+        padding: 35px 47px;
     }
 }
 
