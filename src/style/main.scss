@@ -1,3 +1,24 @@
+@mixin button {
+    height: 50px;
+    width: 300px;
+    border:none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .01);
+    align-self: center;
+
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 26px;
+    text-align: center;
+    font-weight: 600;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+
 .home{
     background-color: rgba(0,0,0,.06);
     display: grid;
@@ -61,14 +82,15 @@
 
 
 .card {
-    height: 675px;
+    min-height: 600px;
+    max-height: 625px;
     width: 1310px;
     box-shadow: 0 4px 30px rgba(0,0,0, 0.50);
     border-radius: 10px;
     
 
     display: grid;
-    grid-template-rows: 1fr 50px;
+    grid-template-rows: 625px 50px;
     background-color: white;
 
 
@@ -88,6 +110,16 @@
 
         justify-items: center;
         align-items: center;
+    }
+
+    &__generate {
+        background-color: #00CB79;
+        @include button;
+    }
+
+    &__clear {
+        background-color: #45b0e5;
+        @include button;
     }
 }
 
